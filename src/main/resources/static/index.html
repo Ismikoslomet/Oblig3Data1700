@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinobilletter</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Kunder</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="">Hjem</a></li>
+
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h1>Bestilling av kinobiletter</h1>
+      <form class="form">
+        <div class="form-group">
+          <label>Filmvalg</label>
+          <select class="form-control" name="filmListe" id="filmene">
+            <option value="velg">Velg film her</option>
+            <option value="film1">Call me by your name</option>
+            <option value="film2">Up</option>
+            <option value="film3">Biler</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="antall">Antall</label>
+          <input id="antall" type="number" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="fornavn">Fornavn</label>
+          <input id="fornavn" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="etternavn">Etternavn</label>
+          <input id="etternavn" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="telefonnr">Telefonnr</label>
+          <input id="telefonnr" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="epost">Epost</label>
+          <input id="epost" type="text" class="form-control">
+        </div>
+      </form>
+      <button class="btn btn-primary" onclick="kjopBillett()">Kjøp</button>
+      <h2>Alle Billetter</h2>
+      <div id="billettene"></div>
+
+    </div>
+    <div id="filmene_kontainer"> </div>
+  </div>
+  <button class="btn btn-danger" onclick="slettBillett()">Slett alle</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
