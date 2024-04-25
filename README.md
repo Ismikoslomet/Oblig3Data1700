@@ -8,3 +8,6 @@ Burte Java som controller, Javascript til funksjoner og HTML og Spring Boot for 
 møtte på masse ulike utfordinger med databasen så koden funker ikke helt 
 https://youtu.be/HYtI8wjbg6s
 https://youtu.be/5uS-4ddQjXI
+
+Feil meldigene som dukket opp i consoll fikk ikke orkalenene til å fikse 
+kom gjerne med tilbake meldiger på hvordan jeg evt kan fikse dette 
